@@ -2,9 +2,11 @@
 
 * export GEMINI_API_KEY="my-key"
 * docker compose up -d 
+* terraform: terraform apply to create bucket and dataset
 * kestra ui: create flows from ./flows/* and create GCP_CREDS kv pair
 * kestra ui: execute for both green and yellow with backfill 2019-01-01 00:00:00 to end time stamp 
 * kestra ui: for extract file metrics, comment purge task 
+* terraform: terraform destroy to remove all used resources
 
 # Quiz: 
 
