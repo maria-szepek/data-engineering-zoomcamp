@@ -1,4 +1,4 @@
-How to build: 
+# How to build: 
 
 * export GEMINI_API_KEY="my-key"
 * docker compose up -d 
@@ -6,10 +6,10 @@ How to build:
 * kestra ui: execute for both green and yellow with backfill 2019-01-01 00:00:00 to end time stamp 
 * kestra ui: for extract file metrics, comment purge task 
 
-Solutions: 
+# Quiz: 
 
-Quiz Questions
-Complete the quiz shown below. It's a set of 6 multiple-choice questions to test your understanding of workflow orchestration, Kestra, and ETL pipelines.
+Quiz Questions: Complete the quiz shown below. It's a set of 6 multiple-choice questions to test your understanding of workflow orchestration, Kestra, and ETL pipelines.
+
     1. Within the execution for Yellow Taxi data for the year 2020 and month 12: what is the uncompressed file size (i.e. the output file yellow_tripdata_2020-12.csv of the extract task)?
     • 128.3 MiB
     • 134.5 MiB
@@ -33,10 +33,11 @@ Complete the quiz shown below. It's a set of 6 multiple-choice questions to test
     • 29,430,127
 
 With query editor in https://console.cloud.google.com/bigquery...
-
+```
 select count(1)
 from `demo_dataset.yellow_tripdata`
 where filename like 'yellow_tripdata_2020%'
+```
 
     4. How many rows are there for the Green Taxi data for all CSV files in the year 2020?
     • 5,327,301
@@ -45,10 +46,11 @@ where filename like 'yellow_tripdata_2020%'
     • 1,342,034
 
 With query editor in https://console.cloud.google.com/bigquery...
-
+```
 select count(1)
 from `demo_dataset.green_tripdata`
 where filename like 'green_tripdata_2020%'
+```
 
     5. How many rows are there for the Yellow Taxi data for the March 2021 CSV file?
     • 1,428,092
@@ -57,10 +59,11 @@ where filename like 'green_tripdata_2020%'
     • 2,561,031
 
 With query editor in https://console.cloud.google.com/bigquery...
-
+```
 select count(1)
 from `demo_dataset.yellow_tripdata`
 where filename like 'yellow_tripdata_2021-03%'
+```
 
     6. How would you configure the timezone to New York in a Schedule trigger?
     • Add a timezone property set to EST in the Schedule trigger configuration
@@ -69,11 +72,10 @@ where filename like 'yellow_tripdata_2021-03%'
     • Add a location property set to New_York in the Schedule trigger configuration
 
 With https://kestra.io/docs/workflow-components/triggers/schedule-trigger: 
-
+```
 triggers:
   - id: daily
     type: io.kestra.plugin.core.trigger.Schedule
     cron: "@daily"
     timezone: America/New_York
-
-    
+```
