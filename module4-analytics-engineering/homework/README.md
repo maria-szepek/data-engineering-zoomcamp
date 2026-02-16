@@ -1,5 +1,5 @@
 # queries
-
+```
 -- question 3: Count of records in fct_monthly_zone_revenue? 
 select count(1) from taxi_rides_ny.prod.fct_monthly_zone_revenue;
 
@@ -44,5 +44,5 @@ limit 10
 select count(1)
 from taxi_rides_ny.prod.stg_fhv_tripdata
 limit 10
-
+```
 
