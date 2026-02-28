@@ -215,3 +215,5 @@ logs/*.log
 
 # duckdb 
 *.db
+
+logs/queries
