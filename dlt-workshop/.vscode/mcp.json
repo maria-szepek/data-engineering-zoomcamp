@@ -1,0 +1,25 @@
+{
+	"servers": {
+		"my-mcp-server-231ef126": {
+			"type": "stdio",
+			"command": "bruin",
+			"args": [
+				"mcp"
+			]
+		},
+		"dlt": {
+		"command": "uv",
+			"args": [
+				"run",
+				"--with",
+				"dlt[duckdb]",
+				"--with",
+				"dlt-mcp[search]",
+				"python",
+				"-m",
+				"dlt_mcp"
+			]
+		}
+	},
+	"inputs": []
+}
