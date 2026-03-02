@@ -1,0 +1,120 @@
+warning: `VIRTUAL_ENV=/home/maria.szepek/Documents/DTCDE/github/data-engineering-zoomcamp/dlt-workshop/practise/my-dlt-pipeline/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+/home/maria.szepek/Documents/DTCDE/github/data-engineering-zoomcamp/dlt-workshop/homework/taxi-pipeline/.venv/lib/python3.11/site-packages/dlt/common/runtime/run_context.py:201: UserWarning: XDG_DATA_HOME is set to /home/maria.szepek/snap/code/226/.local/share but ~/.dlt already exists. Using ~/.dlt
+  warnings.warn(
+2026-03-02 16:57:20,818|[WARNING]|26508|127580766141312|dlt|validate.py|verify_normalized_table:91|In schema `taxi_pipeline_rest_api_source`: The following columns in table 'taxi_trips' did not receive any data during this load and therefore could not have their types inferred:
+  - rate_code
+  - mta_tax
+
+Unless type hints are provided, these columns will not be materialized in the destination.
+One way to provide type hints is to use the 'columns' argument in the '@dlt.resource' decorator.  For example:
+
+@dlt.resource(columns={'rate_code': {'data_type': 'text'}})
+
+-------------------- Extract taxi_pipeline_rest_api_source ---------------------
+Resources: 0/1 (0.0%) | Time: 0.00s | Rate: 0.00/s
+Memory usage: 139.92 MB (40.30%) | CPU usage: 0.00%
+
+-------------------- Extract taxi_pipeline_rest_api_source ---------------------
+Resources: 0/1 (0.0%) | Time: 1.87s | Rate: 0.00/s
+taxi_trips: 1000  | Time: 0.00s | Rate: 131072000.00/s
+Memory usage: 143.71 MB (40.40%) | CPU usage: 0.00%
+
+-------------------- Extract taxi_pipeline_rest_api_source ---------------------
+Resources: 0/1 (0.0%) | Time: 3.65s | Rate: 0.00/s
+taxi_trips: 2000  | Time: 1.78s | Rate: 1125.12/s
+Memory usage: 145.56 MB (40.40%) | CPU usage: 0.00%
+
+-------------------- Extract taxi_pipeline_rest_api_source ---------------------
+Resources: 0/1 (0.0%) | Time: 5.27s | Rate: 0.00/s
+taxi_trips: 3000  | Time: 3.40s | Rate: 883.02/s
+Memory usage: 146.93 MB (40.40%) | CPU usage: 0.00%
+
+-------------------- Extract taxi_pipeline_rest_api_source ---------------------
+Resources: 0/1 (0.0%) | Time: 6.73s | Rate: 0.00/s
+taxi_trips: 4000  | Time: 4.86s | Rate: 822.95/s
+Memory usage: 148.17 MB (40.40%) | CPU usage: 0.00%
+
+-------------------- Extract taxi_pipeline_rest_api_source ---------------------
+Resources: 0/1 (0.0%) | Time: 8.28s | Rate: 0.00/s
+taxi_trips: 5000  | Time: 6.41s | Rate: 779.51/s
+Memory usage: 149.67 MB (40.40%) | CPU usage: 0.00%
+
+-------------------- Extract taxi_pipeline_rest_api_source ---------------------
+Resources: 0/1 (0.0%) | Time: 9.99s | Rate: 0.00/s
+taxi_trips: 6000  | Time: 8.12s | Rate: 739.23/s
+Memory usage: 149.74 MB (40.40%) | CPU usage: 0.00%
+
+-------------------- Extract taxi_pipeline_rest_api_source ---------------------
+Resources: 0/1 (0.0%) | Time: 11.61s | Rate: 0.00/s
+taxi_trips: 7000  | Time: 9.74s | Rate: 718.53/s
+Memory usage: 149.96 MB (40.40%) | CPU usage: 0.00%
+
+-------------------- Extract taxi_pipeline_rest_api_source ---------------------
+Resources: 0/1 (0.0%) | Time: 13.26s | Rate: 0.00/s
+taxi_trips: 8000  | Time: 11.39s | Rate: 702.66/s
+Memory usage: 150.73 MB (40.40%) | CPU usage: 0.00%
+
+-------------------- Extract taxi_pipeline_rest_api_source ---------------------
+Resources: 0/1 (0.0%) | Time: 14.89s | Rate: 0.00/s
+taxi_trips: 9000  | Time: 13.02s | Rate: 691.02/s
+Memory usage: 150.74 MB (40.40%) | CPU usage: 0.00%
+
+-------------------- Extract taxi_pipeline_rest_api_source ---------------------
+Resources: 0/1 (0.0%) | Time: 16.46s | Rate: 0.00/s
+taxi_trips: 10000  | Time: 14.59s | Rate: 685.52/s
+Memory usage: 152.37 MB (40.40%) | CPU usage: 0.00%
+
+-------------------- Extract taxi_pipeline_rest_api_source ---------------------
+Resources: 0/1 (0.0%) | Time: 17.95s | Rate: 0.00/s
+taxi_trips: 10000  | Time: 16.08s | Rate: 621.92/s
+Memory usage: 152.38 MB (40.40%) | CPU usage: 0.00%
+
+-------------------- Extract taxi_pipeline_rest_api_source ---------------------
+Resources: 1/1 (100.0%) | Time: 17.96s | Rate: 0.06/s
+taxi_trips: 10000  | Time: 16.09s | Rate: 621.44/s
+Memory usage: 152.38 MB (40.40%) | CPU usage: 0.00%
+
+-------------------- Extract taxi_pipeline_rest_api_source ---------------------
+Resources: 0/1 (0.0%) | Time: 0.00s | Rate: 0.00/s
+Memory usage: 152.39 MB (40.40%) | CPU usage: 0.00%
+
+-------------------- Extract taxi_pipeline_rest_api_source ---------------------
+Resources: 0/1 (0.0%) | Time: 0.00s | Rate: 0.00/s
+_dlt_pipeline_state: 1  | Time: 0.00s | Rate: 466033.78/s
+Memory usage: 152.39 MB (40.40%) | CPU usage: 0.00%
+
+-------------------- Extract taxi_pipeline_rest_api_source ---------------------
+Resources: 1/1 (100.0%) | Time: 0.02s | Rate: 66.18/s
+_dlt_pipeline_state: 1  | Time: 0.01s | Rate: 81.19/s
+Memory usage: 152.39 MB (40.40%) | CPU usage: 0.00%
+
+-------- Normalize taxi_pipeline_rest_api_source in 1772488621.9556847 ---------
+Files: 0/2 (0.0%) | Time: 0.00s | Rate: 0.00/s
+Memory usage: 152.45 MB (40.40%) | CPU usage: 0.00%
+
+-------- Normalize taxi_pipeline_rest_api_source in 1772488621.9556847 ---------
+Files: 0/2 (0.0%) | Time: 0.00s | Rate: 0.00/s
+Items: 0  | Time: 0.00s | Rate: 0.00/s
+Memory usage: 152.45 MB (40.40%) | CPU usage: 0.00%
+
+-------- Normalize taxi_pipeline_rest_api_source in 1772488621.9556847 ---------
+Files: 2/2 (100.0%) | Time: 0.86s | Rate: 2.34/s
+Items: 10001  | Time: 0.86s | Rate: 11690.69/s
+Memory usage: 165.09 MB (40.40%) | CPU usage: 0.00%
+
+----------- Load taxi_pipeline_rest_api_source in 1772488621.9556847 -----------
+Jobs: 0/2 (0.0%) | Time: 0.00s | Rate: 0.00/s
+Memory usage: 165.09 MB (40.40%) | CPU usage: 0.00%
+
+----------- Load taxi_pipeline_rest_api_source in 1772488621.9556847 -----------
+Jobs: 1/2 (50.0%) | Time: 1.37s | Rate: 0.73/s
+Memory usage: 286.94 MB (40.90%) | CPU usage: 0.00%
+
+----------- Load taxi_pipeline_rest_api_source in 1772488621.9556847 -----------
+Jobs: 2/2 (100.0%) | Time: 1.43s | Rate: 1.39/s
+Memory usage: 162.60 MB (40.50%) | CPU usage: 0.00%
+
+Pipeline taxi_pipeline load step completed in 1.43 seconds
+1 load package(s) were loaded to destination duckdb and into dataset taxi_pipeline_dataset
+The duckdb destination used duckdb:////home/maria.szepek/Documents/DTCDE/github/data-engineering-zoomcamp/dlt-workshop/homework/taxi-pipeline/taxi_pipeline.duckdb location to store data
+Load package 1772488621.9556847 is LOADED and contains no failed jobs
