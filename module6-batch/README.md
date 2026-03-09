@@ -30,7 +30,12 @@ pyspark.__file__
 
 * if executed on remote machine, port forwarding needed for jupyter (8888) and spark master (4040)
 
-* 
+* .gitignore: added for spark output: 
+
+_SUCCESS
+*.crc
+
+
 
 
 
