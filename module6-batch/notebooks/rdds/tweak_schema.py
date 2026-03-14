@@ -1,0 +1,12 @@
+types.StructType([
+    types.StructField('hour', types.TimestampType(), True),
+    types.StructField('zone', types.IntegerType(), True),
+    types.StructField('revenue', types.DoubleType(), True),
+    types.StructField('count', types.IntegerType(), True)]
+)
+
+# add types everywhere 
+# correct types
+
+# alt + shift 
+
